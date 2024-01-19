@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap');
+
+:root {
+    --bgc-hero-and-footer: #1F2937;
+    --fc-hero-main-text: #F9FAF8;
+    --fc-hero-sec-text: #E5E7EB;
+    --bgc-button-and-cta: #3882F6;
+    --bgc-quote-section: #E5E7EB;
+    --fc-quote-text: #1F2937;
+    --border-placeholder: 1px solid red;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    background-color: var(--bgc-hero-and-footer);
+}
+
+.header-logo {
+    color: var(--fc-hero-main-text);
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: 5rem;
+}
+
+.header-links ul {
+    display: flex;
+    gap: 2rem;
+    color: var(--fc-hero-sec-text);
+    font-size: 18px;
+    margin-right: 5rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgc-hero-and-footer);
+    border: var(--border-placeholder);
+    min-height: 25rem;
+    padding: 5rem 0;
+    gap: 2rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 5rem;
+    color: var(--fc-hero-main-text);
+    flex: 1;
+    border: var(--border-placeholder);
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-sec-text {
+    font-size: 18px;
+    color: var(--fc-hero-sec-text);
+}
+
+.hero-signup-button {
+    background-color: var(--bgc-button-and-cta);
+    border: none;
+    color: var(--fc-hero-main-text);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.4rem 2rem;
+    border-radius: 0.6rem;
+    align-self: flex-start;
+}
+
+.hero-image {
+    border: var(--border-placeholder);
+    margin-right: 5rem;
+    background-color: grey;
+    color: var(--fc-hero-sec-text);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
