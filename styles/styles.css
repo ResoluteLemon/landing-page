@@ -33,10 +33,19 @@ ul {
     list-style: none;
 }
 
-header, .section-hero {
+header, 
+.section-hero, 
+footer {
     display: flex;
     justify-content: center;
     background-color: var(--bgc-hero-and-footer); 
+}
+
+footer {
+    color: var(--fc-hero-sec-text);
+    font-size: 18px;
+    align-items: center;
+    height: 5rem;
 }
 
 /* pinch content to middle 1440px */
@@ -237,4 +246,6 @@ header, .section-hero {
 .signup-button-inverted {
     border: 2px solid white;
 }
+
+
 
