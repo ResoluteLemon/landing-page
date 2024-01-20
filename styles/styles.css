@@ -23,6 +23,8 @@ body {
     align-items: center;
 }
 
+/* ensures background colour of sections span the 
+whole width of the screen */
 header, section, footer {
     width: 100%;
 }
@@ -37,9 +39,11 @@ header, .section-hero {
     background-color: var(--bgc-hero-and-footer); 
 }
 
+/* pinch content to middle 1440px */
 .header-container, 
 .section-hero-container,
-.section-info-container {
+.section-info-container,
+.section-quote-container {
     max-width: 1440px;
     width: 100%;
 }
@@ -70,7 +74,6 @@ header, .section-hero {
     display: flex;
     justify-content: space-between;
     background-color: var(--bgc-hero-and-footer);
-    border: var(--border-placeholder);
     min-height: 25rem;
     padding: 5rem 0;
     gap: 2rem;
@@ -83,7 +86,6 @@ header, .section-hero {
     margin-left: 5rem;
     color: var(--fc-hero-main-text);
     flex: 1;
-    border: var(--border-placeholder);
 }
 
 .hero-main-text {
@@ -108,7 +110,6 @@ header, .section-hero {
 }
 
 .hero-image {
-    border: var(--border-placeholder);
     margin-right: 5rem;
     background-color: grey;
     color: var(--fc-hero-sec-text);
@@ -128,7 +129,6 @@ header, .section-hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: var(--border-placeholder);
     gap: 2rem;
     padding: 3rem 0;
 }
@@ -149,7 +149,8 @@ header, .section-hero {
 .info-container {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .info-thumbnail {
@@ -161,3 +162,32 @@ header, .section-hero {
 .info-desc, .info-thumbnail {
     width: 10rem;
 }
+
+.section-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgc-quote-section);
+}
+
+.section-quote-container {
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: var(--fc-quote-text);
+}
+
+.quote-source {
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: flex-end;
+}
+
