@@ -43,7 +43,8 @@ header, .section-hero {
 .header-container, 
 .section-hero-container,
 .section-info-container,
-.section-quote-container {
+.section-quote-container,
+.section-cta-container {
     max-width: 1440px;
     width: 100%;
 }
@@ -98,7 +99,7 @@ header, .section-hero {
     color: var(--fc-hero-sec-text);
 }
 
-.hero-signup-button {
+.signup-button {
     background-color: var(--bgc-button-and-cta);
     border: none;
     color: var(--fc-hero-main-text);
@@ -189,5 +190,51 @@ header, .section-hero {
     font-weight: bold;
     font-size: 1.5rem;
     align-self: flex-end;
+}
+
+.section-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25rem;
+}
+
+.cta-box {
+    min-height: 12rem;
+    border-radius: 1rem;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 8rem;
+    gap: 1rem;
+    background-color: var(--bgc-button-and-cta);
+}
+
+.cta-text-container {
+    flex: 2;
+    color: var(--fc-hero-main-text);
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-text-main {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cta-text-sub {
+    font-size: 1.5rem;
+}
+
+.cta-button-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-button-inverted {
+    border: 2px solid white;
 }
 
